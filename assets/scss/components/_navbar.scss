@@ -1,0 +1,126 @@
+header {
+  background-color: $gray-bg;
+  .nav {
+    padding: 10px 0;
+    &__logo {
+      display: none;
+      a {
+        font-size: 30px;
+        text-decoration: none;
+        color: $main-furniture-color;
+        transition: 0.5s all ease-in-out;
+        margin-left: 20px;
+        &:hover {
+          color: darken($main-furniture-color, 10%);
+        }
+      }
+    }
+    &__bars {
+      display: none;
+    }
+    &__menu {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      list-style: none;
+      margin: auto;
+      align-items: center;
+      .fa-xmark {
+        display: none;
+      }
+      li {
+        a {
+          color: #000;
+          text-decoration: none;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          transition: 0.3s all ease-in-out;
+
+          &:hover {
+            color: $main-furniture-color;
+          }
+        }
+      }
+      .logo {
+        a {
+          font-size: 30px;
+          text-decoration: none;
+          color: $main-furniture-color;
+          transition: 0.5s all ease-in-out;
+          &:hover {
+            color: darken($main-furniture-color, 10%);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 930px) {
+  header {
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      &__logo {
+        display: block;
+      }
+      &__bars {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+        margin-right: 20px;
+      }
+      &__menu {
+        z-index: 9999;
+        flex-direction: column;
+        background-color: #000;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 250px;
+        align-items: normal;
+        li {
+          a {
+            color: #fff;
+          }
+        }
+        .logo {
+          display: none;
+        }
+        .fa-xmark {
+          display: block;
+          position: absolute;
+          font-size: 30px;
+          cursor: pointer;
+          top: 20px;
+          right: 30px;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+.showNav {
+  left: 0 !important;
+  transition: 0.3s all ease-in-out;
+}
+
+.hideNav {
+  left: -100vw !important;
+  transition: 0.3s all ease-in-out;
+}
+
+.blackShadow {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9998;
+}

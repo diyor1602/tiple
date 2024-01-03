@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buy</title>
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css"
+    />
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <nav class="container-fluid nav">
+        <div class="blackShadow"></div>
+        <div class="nav__logo">
+          <a href="../index.html">
+            Tiple
+            <i class="fa-solid fa-lamp-desk"></i>
+          </a>
+        </div>
+        <ul class="nav__menu hideNav">
+          <i class="fa-solid fa-xmark"></i>
+          <li>
+            <a href="../index.html">Home <i class="fa-solid fa-house"></i></a>
+          </li>
+          <li>
+            <a href="../pages/portfolio.html"
+              >Portfolio <i class="fa-solid fa-briefcase"></i
+            ></a>
+          </li>
+          <li>
+            <a href="../pages/calculator.html"
+              >Calculator <i class="fa-duotone fa-calculator"></i
+            ></a>
+          </li>
+          <li class="logo">
+            <a href="../index.html">
+              Tiple
+              <i class="fa-solid fa-lamp-desk"></i>
+            </a>
+          </li>
+          <li>
+            <a href="../pages/products.html"
+              >Products <i class="fa-solid fa-couch"></i
+            ></a>
+          </li>
+          <li>
+            <a href="../pages/invest.html"
+              >Invest <i class="fa-solid fa-badge-dollar"></i
+            ></a>
+          </li>
+          <li>
+            <a href="../pages/contact.html"
+              >Contact <i class="fa-solid fa-phone"></i
+            ></a>
+          </li>
+        </ul>
+        <div class="nav__bars"><i class="fa-solid fa-bars"></i></div>
+      </nav>
+    </header>
+
+    <!-- MAIN -->
+    <section id="buy">
+      <div class="container-fluid">
+        <div class="buyWrapper"></div>
+      </div>
+    </section>
+
+    <!-- ORDER FORM  -->
+    <section id="orderForm">
+      <div class="container-fluid">
+        <div class="orderFormWrapper">
+          <div class="form_title">Product Order Form</div>
+          <form action="buy.php?">
+            <div class="buyInputs">
+              <label for="buyFullNameInput">Full Name <span>*</span> </label>
+              <input
+                type="text"
+                id="buyFullNameInput"
+                class="form-control"
+                required
+              />
+
+              <label for="buyEmailInput">Email <span>*</span> </label>
+              <input
+                type="email"
+                id="buyEmailInput"
+                class="form-control"
+                required
+              />
+
+              <label for="buyPhoneInput">Phone Number <span>*</span> </label>
+              <input
+                type="tel"
+                id="buyPhoneInput"
+                class="form-control"
+                required
+              />
+
+              <label for="buyPhone2Input">2nd Phone Number </label>
+              <input type="tel" id="buyPhone2Input" class="form-control" />
+
+              <label for="buyAddressInput">Address <span>*</span> </label>
+              <input
+                type="text"
+                id="buyAddressInput"
+                class="form-control"
+                required
+              />
+
+              <label for="buyCityInput">City <span>*</span> </label>
+              <input
+                type="text"
+                id="buyCityInput"
+                class="form-control"
+                required
+              />
+
+              <label for="buyPostalInput">Postal Code <span>*</span> </label>
+              <input
+                type="text"
+                id="buyPostalInput"
+                class="form-control"
+                required
+              />
+            </div>
+            <div class="buyInformationCard">
+              <div class="buyInformationCard__content">
+                <div class="mb-3">
+                  <label for="cardNumber" class="form-label">Card Number</label>
+                  <div class="input-group">
+                    <span class="input-group-text"
+                      ><i class="fab fa-cc-visa"></i
+                    ></span>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="cardNumber"
+                      placeholder="Enter card number"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label for="cardDate" class="form-label"
+                    >Card Expiry Date</label
+                  >
+                  <div class="input-group">
+                    <span class="input-group-text"
+                      ><i class="fas fa-calendar-alt"></i
+                    ></span>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="cardDate"
+                      placeholder="MM/YY"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label for="cardHolder" class="form-label"
+                    >Cardholder's Name</label
+                  >
+                  <div class="input-group">
+                    <span class="input-group-text"
+                      ><i class="fas fa-user"></i
+                    ></span>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="cardHolder"
+                      placeholder="Enter cardholder's name"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label for="cardCvs" class="form-label">CVS</label>
+                  <div class="input-group">
+                    <span class="input-group-text">
+                      <i class="fa-solid fa-credit-card-blank"></i>
+                    </span>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="cardCvs"
+                      placeholder="Enter CVS"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="buyInformationCard__content__item">
+                  <div class="buyInformationCard__content__item__title">
+                    Product
+                  </div>
+                  <div class="buyInformationCard__content__item__value">
+                    <span id="buyProductName"> </span>
+                  </div>
+                </div>
+                <div class="buyInformationCard__content__item">
+                  <div class="buyInformationCard__content__item__title">
+                    Size
+                  </div>
+                  <div class="buyInformationCard__content__item__value">
+                    <span id="buyProductSize">
+                      <div class="buyElementSize">
+                        <select class="form-select" id="buyElementOption">
+                          <option value="1">Small (-10 %)</option>
+                          <option selected value="2">Medium</option>
+                          <option value="3">Large (+10 %)</option>
+                        </select>
+                      </div>
+                    </span>
+                  </div>
+                </div>
+                <div class="buyInformationCard__content__item">
+                  <div class="buyInformationCard__content__item__title">
+                    Price
+                  </div>
+                  <div class="buyInformationCard__content__item__value">
+                    <span id="buyProductPrice"></span>
+                  </div>
+                </div>
+                <div class="buyInformationCard__content__item">
+                  <div class="buyInformationCard__content__item__title">
+                    Quantity
+                  </div>
+                  <div class="buyInformationCard__content__item__value">
+                    <button type="button" class="decreaseQuantity">-</button>
+                    <span id="buyProductQuantity">1</span>
+                    <button type="button" class="increaseQuantity">+</button>
+                  </div>
+                </div>
+                <div class="buyInformationCard__content__item">
+                  <div class="buyInformationCard__content__item__title">
+                    Shipping
+                  </div>
+                  <div class="buyInformationCard__content__item__value">
+                    <span id="buyProductShipping">0 $</span>
+                  </div>
+                </div>
+                <div class="buyInformationCard__content__item">
+                  <div class="buyInformationCard__content__item__title">
+                    Total
+                  </div>
+                  <div class="buyInformationCard__content__item__value">
+                    <span id="buyProductTotal"></span>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="footer" class="py-5">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Pages</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="../index.html" class="nav-link p-0 text-muted">Home</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a
+                  href="../pages/portfolio.html"
+                  class="nav-link p-0 text-muted"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a
+                  href="../pages/calculator.html"
+                  class="nav-link p-0 text-muted"
+                  >Calculator</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="../pages/products.html" class="nav-link p-0 text-muted"
+                  >Products</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="../pages/contact.html" class="nav-link p-0 text-muted"
+                  >Contact</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="../pages/invest.html" class="nav-link p-0 text-muted"
+                  >Invest</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Socials</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">Telegram</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">Instagram</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">Youtube</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">Facebook</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">Tik tok</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Contact</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="tel:+998919081602" class="nav-link p-0 text-muted"
+                  >+998 91 908 1602</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a
+                  href="mailto:abdurakhmanov1602@gmail.com"
+                  class="nav-link p-0 text-muted"
+                  >abdurakhmanov1602@gmail.com</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a
+                  href="https://t.me/abdurakhmanov"
+                  class="nav-link p-0 text-muted"
+                  >abdurakhmanov.t.me</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-5 offset-md-1 mb-3">
+            <form>
+              <h5>Subscribe to our newsletter</h5>
+              <p>Monthly digest of what's new and exciting from us.</p>
+              <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                <label for="newsletter1" class="visually-hidden"
+                  >Email address</label
+                >
+                <input
+                  id="newsletter1"
+                  type="text"
+                  class="form-control"
+                  placeholder="Email address"
+                />
+                <button class="btn btn-primary" type="button">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div
+          class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top"
+        >
+          <p>© 2024 Tiple Company, Inc. All rights reserved.</p>
+          <ul class="list-unstyled d-flex">
+            <li class="ms-3">
+              <a class="link-dark" href="#"
+                ><i class="fa-brands fa-telegram"></i
+              ></a>
+            </li>
+            <li class="ms-3">
+              <a class="link-dark" href="#">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+            <li class="ms-3">
+              <a class="link-dark" href="#"
+                ><i class="fa-brands fa-youtube"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!-- BOOTSTRAP JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <!-- JQUERY -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <!-- ASSETS -->
+    <script>
+      // get ID from URL
+      const queryString = window.location.search;
+      const urlParams = new URLSearchParams(queryString);
+      const elementID = urlParams.get("elementID");
+      let buyProductName = document.querySelector("#buyProductName");
+
+      function changeImageColor(color, elementName) {
+        let imageDiv = document.querySelector(".elementImage");
+        let imageSrc = `../assets/images/products/${elementID}/${color}.jpg`;
+        imageDiv.src = imageSrc;
+        buyProductName.innerHTML = elementName + " " + color;
+      }
+    </script>
+    <script src="../assets/js/navbar.js"></script>
+    <script type="module" src="../assets/js/buy.js"></script>
+  </body>
+</html>

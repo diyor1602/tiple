@@ -1,0 +1,10 @@
+body {
+  overflow-x: hidden;
+  .btn-primary {
+    background-color: $main-furniture-color;
+    border: none;
+    &:hover {
+      background-color: darken($main-furniture-color, 10%);
+    }
+  }
+}

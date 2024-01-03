@@ -1,0 +1,30 @@
+#calculator {
+  padding: 50px 0;
+  .container-fluid {
+    .calculatorWrapper {
+      text-align: center;
+      img {
+        max-width: 900px;
+        width: 100%;
+      }
+      .calculator_text {
+        margin: 30px 0;
+        font-size: 30px;
+      }
+      button {
+        background-color: $main-furniture-color;
+        border: none;
+        max-width: 200px;
+        padding: 10px 20px;
+        width: 100%;
+        border-radius: 5px;
+        font-size: 15px;
+        text-transform: uppercase;
+        transition: 0.3s all ease-in-out;
+        &:hover {
+          background-color: darken($main-furniture-color, 10%);
+        }
+      }
+    }
+  }
+}

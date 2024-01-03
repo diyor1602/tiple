@@ -1,0 +1,196 @@
+#filter {
+  button,
+  input {
+    border-radius: 0;
+  }
+  .typeListGroup {
+    li {
+      display: flex;
+      justify-content: space-between;
+      cursor: pointer;
+      border: var(--bs-list-group-border-width) solid
+        var(--bs-list-group-border-color);
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    .activeListItem {
+      background-color: #f5f5f5;
+    }
+  }
+  .filterTypeTitle {
+    padding-left: 1rem;
+  }
+  .brandListGroup,
+  .sizeListGroup {
+    li {
+      display: flex;
+      gap: 10px;
+      border: var(--bs-list-group-border-width) solid
+        var(--bs-list-group-border-color);
+    }
+  }
+  .priceListGroup {
+    li {
+      .priceListInput {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+      }
+    }
+  }
+  .filterApplyBtnWrapper {
+    display: grid;
+    place-items: center;
+    margin: 10px 0;
+    .filterApplyBtn {
+      width: 75%;
+      border-radius: 5px;
+      background-color: $main-furniture-color;
+      border-color: $main-furniture-color;
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        background-color: darken($main-furniture-color, 10%);
+        border-color: darken($main-furniture-color, 10%);
+      }
+    }
+  }
+  .card {
+    .card-body {
+      h5 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+  }
+}
+
+.filterProWrapper {
+  padding: 50px 15px;
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  .allProductsWrapper {
+    .designTypes {
+      display: flex;
+      gap: 20px;
+      font-size: 20px;
+      margin-bottom: 20px;
+      margin-top: 5px;
+      i {
+        cursor: pointer;
+      }
+      .activeDesignType {
+        color: $main-furniture-color;
+      }
+    }
+    #allProducts {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      width: 100%;
+      flex-direction: row;
+      .productCardTh {
+        border: 1px solid #ddd;
+        width: 250px;
+        height: 310px;
+        box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+        img {
+          width: 100%;
+          object-fit: cover;
+        }
+        &__info {
+          padding: 10px;
+          &__discount {
+            color: #999;
+            text-decoration: line-through;
+          }
+          &__title {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 10px 0;
+          }
+          div {
+            display: flex;
+            gap: 10px;
+          }
+        }
+      }
+      .productCardList {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        border: 1px solid #ddd;
+        box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+        height: 50px;
+        width: 100%;
+        padding-right: 10px;
+        img {
+          width: 70px;
+        }
+        &__info {
+          display: flex;
+          gap: 30px;
+          align-items: center;
+          &__btns {
+            margin-top: 0 !important;
+          }
+          &__discount {
+            color: #999;
+            text-decoration: line-through;
+          }
+          &__title {
+            font-size: 18px;
+            font-weight: bold;
+          }
+          div {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .filterProWrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+    #allProducts {
+      justify-content: center;
+    }
+    #filter {
+      width: 100%;
+      .card {
+        width: 100% !important;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .productCardList {
+    &__info {
+      gap: 5px !important;
+      &__title {
+        font-size: 12px !important;
+        margin: auto;
+      }
+      &__discount {
+        display: none;
+      }
+      &__price {
+        font-size: 12px !important;
+      }
+      &__btns {
+        .btn-primary {
+          display: none;
+        }
+      }
+    }
+  }
+}
