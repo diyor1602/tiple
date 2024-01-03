@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css"
+    />
+    <!-- Slick Css -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <nav class="container-fluid nav">
+        <div class="blackShadow"></div>
+        <div class="nav__logo">
+          <a href="./index.html">
+            Tiple
+            <i class="fa-solid fa-lamp-desk"></i>
+          </a>
+        </div>
+        <ul class="nav__menu hideNav">
+          <i class="fa-solid fa-xmark"></i>
+          <li>
+            <a href="./index.html">Home <i class="fa-solid fa-house"></i></a>
+          </li>
+          <li>
+            <a href="./pages/portfolio.html"
+              >Portfolio <i class="fa-solid fa-briefcase"></i
+            ></a>
+          </li>
+          <li>
+            <a href="./pages/calculator.html"
+              >Calculator <i class="fa-duotone fa-calculator"></i
+            ></a>
+          </li>
+          <li class="logo">
+            <a href="./index.html">
+              Tiple
+              <i class="fa-solid fa-lamp-desk"></i>
+            </a>
+          </li>
+          <li>
+            <a href="./pages/products.html"
+              >Products <i class="fa-solid fa-couch"></i
+            ></a>
+          </li>
+          <li>
+            <a href="./pages/invest.html"
+              >Invest <i class="fa-solid fa-badge-dollar"></i
+            ></a>
+          </li>
+          <li>
+            <a href="./pages/contact.html"
+              >Contact <i class="fa-solid fa-phone"></i
+            ></a>
+          </li>
+        </ul>
+        <div class="nav__bars"><i class="fa-solid fa-bars"></i></div>
+      </nav>
+    </header>
+
+    <!-- SHOWCASE -->
+    <section id="showcase">
+      <div class="container-fluid">
+        <div class="showcase_content">
+          <div class="showcase_texts">
+            <div class="showcase_title">
+              Transforming Spaces with
+              <span><a href="./index.html">Tiple</a></span
+              >: Where Furniture Meets <span id="typingWord"></span>
+            </div>
+            <div class="showcase_btn">
+              <a href="./pages/products.html">
+                <button class="btn btn-primary">Go to the Store</button>
+              </a>
+            </div>
+          </div>
+          <div class="showcase_carousel">
+            <div class="showcase_images">
+              <div class="showcase_slide">
+                <img
+                  class="carousel_image"
+                  src="./assets/images/showcase1.jpg"
+                  alt="carousel image"
+                />
+                <img
+                  class="carousel_image"
+                  src="./assets/images/showcase2.jpg"
+                  alt="carousel image"
+                />
+                <img
+                  class="carousel_image"
+                  src="./assets/images/showcase3.jpg"
+                  alt="carousel image"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEW PRODUCTS  -->
+    <section id="newProducts">
+      <div class="container-fluid">
+        <div class="section_title">New Products</div>
+        <div class="newProductsWrapper"></div>
+        <a href="./pages/products.html">
+          <button class="btn btn-primary">SEE ALL</button>
+        </a>
+      </div>
+    </section>
+
+    <!-- OUR HISTORY -->
+    <section id="ourHistory">
+      <div class="container-fluid">
+        <div class="section_title">About Us</div>
+        <div class="ourHistoryWrapper">
+          <div class="ourHistoryImages">
+            <img src="./assets/images/history.jpg" alt="history" />
+          </div>
+          <div class="ourHistoryTexts">
+            <div class="ourHistoryTexts__title">
+              <span class="ourHistoryTexts__title__year"></span> years of
+              experience in the furniture industry
+            </div>
+            <div class="ourHistoryTexts__text">
+              At <span>Tiple</span>, our history is a testament to a relentless
+              pursuit of perfection, a dedication to craftsmanship, and a
+              commitment to enhancing the way people experience comfort within
+              their homes. Join us as we continue to craft comfort and create
+              stories, one piece of furniture at a time.
+            </div>
+          </div>
+        </div>
+        <div class="ourHistoryYears">
+          <div class="historyStart"></div>
+          <div class="historyDiff"></div>
+          <div class="historyCurrent"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OUR PARTNERS -->
+    <section id="partners">
+      <div class="container-fluid">
+        <div class="section_title">Our Partners</div>
+        <div class="partnersWrapper">
+          <img src="./assets/images/Ikea_logo.svg.png" alt="ikea" />
+          <img src="./assets/images/VOGUE_LOGO.svg.png" alt="vogue" />
+          <img src="./assets/images/zaraLogo.svg" alt="zara" />
+        </div>
+      </div>
+    </section>
+
+    <!-- CATEGORY -->
+    <section id="category">
+      <div class="container-fluid">
+        <div class="section_title">Category</div>
+        <div class="categoryWrapper"></div>
+      </div>
+    </section>
+
+    <!-- CALCULATOR -->
+    <section id="calculator">
+      <div class="container-fluid">
+        <div class="section_title">Calculator</div>
+        <div class="calculatorWrapper">
+          <img src="./assets/images/sofaCalc.png" alt="calculator" />
+          <div class="calculator_text">
+            Do you need customize for yourself? Do it with our calculator!
+          </div>
+          <a href="./pages/calculator.html">
+            <button class="btn btn-primary">Customize</button>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services">
+      <div class="container-fluid">
+        <div class="servicesTitle">We provide good services</div>
+        <div class="servicesWrapper">
+          <div class="serviceCard">
+            <div class="serviceCard__icon">
+              <i class="fa-solid fa-truck"></i>
+            </div>
+            <div class="serviceCard__title">Free Shipping</div>
+            <div class="serviceCard__text">
+              We provide free shipping for all orders over $100.
+            </div>
+          </div>
+          <div class="serviceCard">
+            <div class="serviceCard__icon">
+              <i class="fa-solid fa-credit-card"></i>
+            </div>
+            <div class="serviceCard__title">Secure Payment</div>
+            <div class="serviceCard__text">
+              We ensure secure payment with PEV.
+            </div>
+          </div>
+          <div class="serviceCard">
+            <div class="serviceCard__icon">
+              <i class="fa-solid fa-undo"></i>
+            </div>
+            <div class="serviceCard__title">Easy Return</div>
+            <div class="serviceCard__text">
+              We ensure easy return for all orders.
+            </div>
+          </div>
+          <div class="serviceCard">
+            <div class="serviceCard__icon">
+              <i class="fa-solid fa-headset"></i>
+            </div>
+            <div class="serviceCard__title">24/7 Support</div>
+            <div class="serviceCard__text">
+              We provide 24/7 support for all customers.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 offset-lg-2">
+            <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+            <div class="accordion" id="faqAccordion">
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="faqHeadingOne">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="false"
+                    aria-controls="collapseOne"
+                  >
+                    What materials are your furniture pieces made from?
+                  </button>
+                </h3>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="faqHeadingOne"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    Our furniture is crafted using a variety of high-quality
+                    materials, including oak, leather, fabric, velvet, glass,
+                    and more. Each product description specifies its materials.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="faqHeadingTwo">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    Do you offer customizable furniture options?
+                  </button>
+                </h3>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="faqHeadingTwo"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    Yes, we provide customization services for select furniture
+                    pieces. Contact our customer service for details on
+                    customization options available.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="faqHeadingThree">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    What are your shipping options and delivery times?
+                  </button>
+                </h3>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="faqHeadingThree"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    We offer standard and express shipping options. Delivery
+                    times vary based on the product and your location. Our team
+                    will provide estimated delivery timelines upon purchase.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="faqHeadingFour">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour"
+                    aria-expanded="false"
+                    aria-controls="collapseFour"
+                  >
+                    Do you provide assembly services for furniture?
+                  </button>
+                </h3>
+                <div
+                  id="collapseFour"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="faqHeadingFour"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    Assembly instructions are included with most items for
+                    self-assembly. Additionally, we offer assembly services for
+                    select larger furniture pieces upon request.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="faqHeadingFive">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFive"
+                    aria-expanded="false"
+                    aria-controls="collapseFive"
+                  >
+                    What is your return policy?
+                  </button>
+                </h3>
+                <div
+                  id="collapseFive"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="faqHeadingFive"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    We have a 30-day return policy for most items in their
+                    original condition. Please refer to our Returns & Exchanges
+                    page for detailed information.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="faqHeadingSix">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseSix"
+                    aria-expanded="false"
+                    aria-controls="collapseSix"
+                  >
+                    Do you offer customizable furniture options?
+                  </button>
+                </h3>
+                <div
+                  id="collapseSix"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="faqHeadingSix"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    Yes, we provide customization services for select furniture
+                    pieces. Contact our customer service for details on
+                    customization options available.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="footer" class="py-5">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Pages</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="./index.html" class="nav-link p-0 text-muted">Home</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="./pages/portfolio.html" class="nav-link p-0 text-muted"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a
+                  href="./pages/calculator.html"
+                  class="nav-link p-0 text-muted"
+                  >Calculator</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="./pages/products.html" class="nav-link p-0 text-muted"
+                  >Products</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="./pages/contact.html" class="nav-link p-0 text-muted"
+                  >Contact</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="./pages/invest.html" class="nav-link p-0 text-muted"
+                  >Invest</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Socials</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">Telegram</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">Instagram</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">Youtube</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">Facebook</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">Tik tok</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Contact</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="tel:+998919081602" class="nav-link p-0 text-muted"
+                  >+998 91 908 1602</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a
+                  href="mailto:abdurakhmanov1602@gmail.com"
+                  class="nav-link p-0 text-muted"
+                  >abdurakhmanov1602@gmail.com</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a
+                  href="https://t.me/abdurakhmanov"
+                  class="nav-link p-0 text-muted"
+                  >abdurakhmanov.t.me</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-5 offset-md-1 mb-3">
+            <form>
+              <h5>Subscribe to our newsletter</h5>
+              <p>Monthly digest of what's new and exciting from us.</p>
+              <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                <label for="newsletter1" class="visually-hidden"
+                  >Email address</label
+                >
+                <input
+                  id="newsletter1"
+                  type="text"
+                  class="form-control"
+                  placeholder="Email address"
+                />
+                <button class="btn btn-primary" type="button">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div
+          class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top"
+        >
+          <p>© 2024 Tiple Company, Inc. All rights reserved.</p>
+          <ul class="list-unstyled d-flex">
+            <li class="ms-3">
+              <a class="link-dark" href="#"
+                ><i class="fa-brands fa-telegram"></i
+              ></a>
+            </li>
+            <li class="ms-3">
+              <a class="link-dark" href="#">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+            <li class="ms-3">
+              <a class="link-dark" href="#"
+                ><i class="fa-brands fa-youtube"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!-- BOOTSTRAP JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <!-- JQUERY -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <!-- TYPED JS -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- SLICK JS -->
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- ASSETS -->
+    <script src="./assets/js/navbar.js"></script>
+    <script src="./assets/js/showcase.js"></script>
+    <script src="./assets/js/newProducts.js"></script>
+    <script src="./assets/js/ourHistory.js"></script>
+    <script src="./assets/js/category.js"></script>
+  </body>
+</html>
