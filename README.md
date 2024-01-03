@@ -1,4 +1,7 @@
 # tiple
+
+https://diyor-furniture.netlify.app/
+
 SAYT XARITASI:
 
 1. index.html: bu fayl o'z ichiga kirish qismini olgan bo'lib jami 8 ta bo'limdan iborat.
