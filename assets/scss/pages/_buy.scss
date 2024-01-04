@@ -1,0 +1,171 @@
+#buy {
+  padding: 50px 0;
+  .container-fluid {
+    .buyWrapper {
+      .buyCard {
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        img {
+          max-width: 50%;
+          width: 100%;
+        }
+        .buyElementName {
+          font-size: 30px;
+          font-weight: 600;
+          margin-top: 20px;
+        }
+        .buyElementDiscountPrice {
+          font-size: 15px;
+          font-weight: 600;
+          margin-top: 20px;
+          text-decoration: line-through;
+          color: gray;
+        }
+        .buyElementPrice {
+          margin-top: 5px;
+          font-size: 20px;
+          font-weight: 600;
+        }
+        .buyElementDescription {
+          margin: 20px 0;
+        }
+        .buyElementSize {
+          margin: 20px 0;
+          span {
+            font-style: italic;
+          }
+        }
+        .availableColors {
+          display: flex;
+          gap: 10px;
+          margin-top: 20px;
+          margin-bottom: 20px;
+          .color {
+            padding: 3px;
+            border-radius: 50%;
+            border: 1px solid gray;
+            cursor: pointer;
+            transition: 0.3s all ease-in-out;
+            &:hover {
+              scale: 1.05;
+            }
+            div {
+              border-radius: 50%;
+              padding: 15px;
+            }
+          }
+          .color1 {
+            background-color: burlywood;
+          }
+          .color2 {
+            background-color: #000;
+          }
+          .color3 {
+            background-color: chocolate;
+          }
+          .color4 {
+            background-color: #f00;
+          }
+        }
+      }
+    }
+  }
+}
+
+#orderForm {
+  padding: 50px 0;
+  .container-fluid {
+    .form_title {
+      font-size: 30px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+    form {
+      width: 100%;
+      display: flex;
+      gap: 50px;
+      .buyInputs {
+        max-width: 30%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        label {
+          font-size: 15px;
+          span {
+            color: red;
+          }
+        }
+      }
+      .buyInformationCard {
+        max-width: 70%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        &__content {
+          &__item {
+            display: flex;
+            justify-content: space-between;
+            margin: 10px 0;
+            &__title {
+              font-size: 15px;
+              font-weight: 600;
+            }
+            &__value {
+              font-size: 15px;
+              font-weight: 600;
+            }
+            .decreaseQuantity,
+            .increaseQuantity {
+              cursor: pointer;
+              background-color: transparent;
+              border: none;
+              &:hover {
+                opacity: 0.8;
+              }
+            }
+            #buyProductQuantity {
+              margin: 0 7px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 930px) {
+  #buy {
+    .container-fluid {
+      .buyWrapper {
+        .buyCard {
+          flex-direction: column;
+          gap: 20px;
+          img {
+            max-width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 670px) {
+  #orderForm {
+    .container-fluid {
+      form {
+        flex-direction: column;
+        gap: 20px;
+        .buyInputs {
+          max-width: 100%;
+        }
+        .buyInformationCard {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}

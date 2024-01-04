@@ -1,0 +1,138 @@
+#invest {
+  padding: 50px 0;
+  .container-fluid {
+    .section_subtitle {
+      font-size: 16px;
+      font-weight: 400;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .investWrapper {
+      margin: 30px 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 50px;
+      canvas {
+        max-width: 600px !important;
+        width: 100% !important;
+        max-height: 600px !important;
+        height: 100% !important;
+      }
+    }
+  }
+}
+
+#plans {
+  .container-fluid {
+    .plansWrapper {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      .plan {
+        width: 300px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        padding: 20px;
+        margin-bottom: 20px;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+        &__title {
+          font-size: 20px;
+          font-weight: bold;
+          margin-bottom: 15px;
+        }
+        &__details {
+          ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            li {
+              padding: 8px 0;
+            }
+          }
+        }
+        &__price {
+          font-size: 24px;
+          font-weight: bold;
+          margin: 20px 0;
+        }
+        &__button {
+          display: block;
+          width: 100%;
+          padding: 10px 0;
+          text-align: center;
+          background-color: $main-furniture-color;
+          color: #fff;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+          &:hover {
+            background-color: darken($main-furniture-color, 10%);
+          }
+        }
+      }
+    }
+  }
+}
+
+#investPayment {
+  padding: 40px 0;
+  .container-fluid {
+    .investPaymentWrapper {
+      text-align: center;
+      &__title {
+        font-size: 28px;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+      &__subtitle {
+        font-size: 18px;
+        color: #888;
+        margin-bottom: 30px;
+      }
+      &__cards {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &__card {
+          margin: 0 10px;
+          i {
+            color: #333;
+            transition: color 0.3s ease;
+            font-size: 40px;
+            cursor: pointer;
+            transition: 0.4s all ease-in-out;
+          }
+          .fa-cc-visa:hover {
+            color: #528f8c;
+          }
+          .fa-cc-mastercard:hover {
+            color: #eb001b;
+          }
+          .fa-paypal:hover {
+            color: #005aa3;
+          }
+          .fa-usps:hover {
+            color: #beb202;
+          }
+          .fa-cc-discover:hover {
+            color: #ff6000;
+          }
+        }
+      }
+    }
+  }
+}
+
+.modal {
+  .btn-primary {
+    min-width: 150px;
+    background-color: $main-furniture-color;
+    border-color: $main-furniture-color;
+    &:hover {
+      background-color: darken($main-furniture-color, 10%);
+      border-color: darken($main-furniture-color, 10%);
+    }
+  }
+}
