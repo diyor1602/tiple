@@ -1,5 +1,7 @@
 SAYT XARITASI:
 
+https://diyor-furniture.netlify.app/
+
 1. index.html: bu fayl o'z ichiga kirish qismini olgan bo'lib jami 8 ta bo'limdan iborat.
 2. pages/products.html: bu sahifada usta mijozlarga xizmat ko'rsatgan ishlarini namoyish uchun foydalaniladi.
 3. pages/calculator.html: bu sahifa 3d modellarni qo'yish uchun ishlatiladi. Bu qismga keyinchalik murakkab 3d modellar orqali mijozlar o'zi xohlagan o'lchamda, rangda, 3d shaklda jonli model yaratishlari mumkin bo'ladi.
